@@ -1,49 +1,64 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000080;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 0 10px black;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
 }
 
-h1 {
-    color: yellow;
-    text-align: center;
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h1 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .todo-container {
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
 }
 
-.todo-container input[type="text"] {
+input {
     flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    font-family: "Josefin Sans", sans-serif;
-}
-
-.todo-container button {
-    padding: 10px 20px;
-    background-color: yellow;
-    color: white;
     border: none;
-    cursor: pointer;
-    font-family: "Josefin Sans", sans-serif;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
 }
 
-.todo-container button:hover {
-    background-color: #45a049;
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
